@@ -142,6 +142,7 @@ export class RemBg {
 		// 0 to 255
 		let inputPixels = await sharpInput
 			.clone()
+			// lanczos2 is smooth, lanczos3 is sharp
 			.resize(imageSize, imageSize, { kernel: "lanczos3", fit: "fill" })
 			.removeAlpha()
 			.raw()
