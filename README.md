@@ -8,6 +8,12 @@ It uses [sharp](https://github.com/lovell/sharp) for input and output so you can
 
 The masking algorithm isn't fully complete yet, but the results are pretty good already!
 
+```bash
+yarn add rembg-node
+
+npm install rembg-node
+```
+
 ## Example
 
 <img height="180" src="https://user-images.githubusercontent.com/8362329/178584133-4aa2483a-8b9c-4f7b-a785-ddcba800e57f.png"/>
