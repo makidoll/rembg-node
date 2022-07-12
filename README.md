@@ -8,7 +8,9 @@ It uses [sharp](https://github.com/lovell/sharp) for input and output so you can
 
 The masking algorithm isn't fully complete yet, but the results are pretty awesome already!
 
-## Example (TypeScript)
+## Example
+
+<img height="150" src="https://user-images.githubusercontent.com/8362329/178580004-9bf4f02c-13ad-404a-823a-47cc3e938fd7.png"/>
 
 ```ts
 import { RemBg } from "rembg-node";
