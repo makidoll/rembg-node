@@ -10,7 +10,7 @@ The masking algorithm isn't fully complete yet, but the results are pretty good 
 
 ## Example
 
-<img height="150" src="https://user-images.githubusercontent.com/8362329/178584133-4aa2483a-8b9c-4f7b-a785-ddcba800e57f.png"/>
+<img height="180" src="https://user-images.githubusercontent.com/8362329/178584133-4aa2483a-8b9c-4f7b-a785-ddcba800e57f.png"/>
 
 ```ts
 import { RemBg } from "rembg-node";
