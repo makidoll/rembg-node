@@ -1,6 +1,6 @@
 # Rembg Node
 
-Rembg lets you **easily remove backgrounds** from images using the [U2-Net ai model](https://github.com/xuebinqin/U-2-Net)
+Rembg lets you **easily remove backgrounds** from images using the [U2-Net AI model](https://github.com/xuebinqin/U-2-Net)
 
 This is a loose port of the original [Rembg for Python](https://github.com/danielgatis/rembg), big thanks to [@danielgatis](https://github.com/danielgatis)
 
