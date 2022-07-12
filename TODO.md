@@ -1,0 +1,2 @@
+-   Finish implementing masking with binary erosion, `estimate_alpha_cf` and `estimate_foreground_ml`
+-   Remove `axios` dependency
