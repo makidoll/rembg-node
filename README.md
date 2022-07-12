@@ -16,6 +16,9 @@ The masking algorithm isn't fully complete yet, but the results are pretty aweso
 import { RemBg } from "rembg-node";
 import sharp from "sharp";
 
+// const { RemBg } = require("./dist/index.js");
+// const sharp = require("sharp");
+
 (async () => {
 	const input = sharp("test-input.jpg");
 
