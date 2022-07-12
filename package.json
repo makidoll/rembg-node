@@ -1,6 +1,6 @@
 {
 	"name": "rembg-node",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Rembg is a tool to remove images background.",
 	"repository": "https://github.com/makifoxgirl/rembg-node",
 	"author": "Maki",
