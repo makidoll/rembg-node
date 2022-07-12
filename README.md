@@ -6,7 +6,7 @@ This is a loose port of the original [Rembg for Python](https://github.com/danie
 
 It uses [sharp](https://github.com/lovell/sharp) for input and output so you can easily integrate it
 
-The masking algorithm isn't fully complete yet, but the results are pretty awesome already!
+The masking algorithm isn't fully complete yet, but the results are pretty good already!
 
 ## Example
 
