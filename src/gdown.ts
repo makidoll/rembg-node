@@ -46,9 +46,6 @@ function streamToBuffer(stream: NodeJS.ReadableStream): Promise<Buffer> {
 }
 
 function getMd5Hash(data: Buffer) {
-	console.log(
-		crypto.createHash("md5").update(data).digest("hex").toLowerCase(),
-	);
 	return crypto.createHash("md5").update(data).digest("hex").toLowerCase();
 }
 
