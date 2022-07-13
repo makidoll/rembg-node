@@ -19,17 +19,17 @@ npm install rembg-node
 <img height="180" src="https://user-images.githubusercontent.com/8362329/178584133-4aa2483a-8b9c-4f7b-a785-ddcba800e57f.png"/>
 
 ```ts
-import { RemBg } from "rembg-node";
+import { Rembg } from "rembg-node";
 import sharp from "sharp";
 
-// const { RemBg } = require("rembg-node");
+// const { Rembg } = require("rembg-node");
 // const sharp = require("sharp");
 
 (async () => {
 	const input = sharp("test-input.jpg");
 
 	// optional arguments
-	const rembg = new RemBg({
+	const rembg = new Rembg({
 		logging: true,
 	});
 

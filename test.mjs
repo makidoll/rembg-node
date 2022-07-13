@@ -1,11 +1,11 @@
-import { RemBg } from "./dist/index.js";
+import { Rembg } from "./dist/index.js";
 import sharp from "sharp";
 
 (async () => {
 	const input = sharp("test-input.jpg");
 
 	// optional arguments
-	const rembg = new RemBg({
+	const rembg = new Rembg({
 		logging: true,
 	});
 

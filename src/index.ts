@@ -86,7 +86,7 @@ function binaryErosion(
 const exists = async (path: string) =>
 	(await fs.stat(path).catch(() => {})) != null;
 
-export class RemBg {
+export class Rembg {
 	private modelDownloaded = false;
 	private promisesResolvesUntillDownloaded: ((value: unknown) => void)[] = [];
 
