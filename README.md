@@ -1,6 +1,6 @@
 # Rembg Node
 
-![](https://img.shields.io/npm/v/rembg-node)
+[![](https://img.shields.io/npm/v/rembg-node)](https://www.npmjs.com/package/rembg-node)
 
 Rembg lets you **easily remove backgrounds** from images using the [U2-Net AI model](https://github.com/xuebinqin/U-2-Net)
 
