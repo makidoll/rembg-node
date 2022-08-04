@@ -11,9 +11,9 @@ It uses [sharp](https://github.com/lovell/sharp) for input and output so you can
 The masking algorithm isn't fully complete yet, but the results are pretty good already!
 
 ```bash
-yarn add rembg-node
+yarn add sharp rembg-node
 
-npm install rembg-node
+npm install sharp rembg-node
 ```
 
 ## Example
