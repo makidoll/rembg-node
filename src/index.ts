@@ -140,7 +140,7 @@ export class Rembg {
 		// https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_simple.py#L15
 		// https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_base.py#L14
 
-		const imageSize = 100;
+		const imageSize = 320;
 		const { width, height } = await sharpInput.metadata();
 
 		// 0 to 255
@@ -176,6 +176,8 @@ export class Rembg {
 			inputChannels[1],
 		]);
 
+		console.log("process 1 passed")
+
 		const session = await InferenceSession.create(this.modelPath);
 
 		const results = await session.run({
@@ -192,6 +194,8 @@ export class Rembg {
 		for (let i = 0; i < outputMaskData.length; i++) {
 			outputMaskData[i] = outputMaskData[i] * 255;
 		}
+
+		console.log("process 2 passed")
 
 		// will make [rgb rgb rgb] unfortunately
 		const sharpMask = await sharp(outputMaskData, {
@@ -238,6 +242,8 @@ export class Rembg {
 
 		// test these values first
 
+		console.log("process 3 passed")
+
 		const finalPixels = await sharpInput
 			.clone()
 			.ensureAlpha()
@@ -250,6 +256,8 @@ export class Rembg {
 			// let alpha = trimap[i];
 			finalPixels[i * 4 + 3] = alpha;
 		}
+
+		console.log("process 4 passed")
 
 		return sharp(finalPixels, {
 			raw: { channels: 4, width, height },

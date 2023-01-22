@@ -117,7 +117,7 @@ class Rembg {
             }
             // https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_simple.py#L15
             // https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_base.py#L14
-            const imageSize = 100;
+            const imageSize = 320;
             const { width, height } = yield sharpInput.metadata();
             // 0 to 255
             let inputPixels = yield sharpInput
@@ -147,6 +147,7 @@ class Rembg {
                 inputChannels[0],
                 inputChannels[1],
             ]);
+            console.log("process 1 passed");
             const session = yield onnxruntime_node_1.InferenceSession.create(this.modelPath);
             const results = yield session.run({
                 "input.1": new onnxruntime_node_1.Tensor("float32", input, [1, 3, 320, 320]),
@@ -157,6 +158,7 @@ class Rembg {
             for (let i = 0; i < outputMaskData.length; i++) {
                 outputMaskData[i] = outputMaskData[i] * 255;
             }
+            console.log("process 2 passed");
             // will make [rgb rgb rgb] unfortunately
             const sharpMask = yield sharp(outputMaskData, {
                 raw: { channels: 1, width: imageSize, height: imageSize },
@@ -192,6 +194,7 @@ class Rembg {
             // 	.png()
             // 	.toFile("mask.png");
             // test these values first
+            console.log("process 3 passed");
             const finalPixels = yield sharpInput
                 .clone()
                 .ensureAlpha()
@@ -203,6 +206,7 @@ class Rembg {
                 // let alpha = trimap[i];
                 finalPixels[i * 4 + 3] = alpha;
             }
+            console.log("process 4 passed");
             return sharp(finalPixels, {
                 raw: { channels: 4, width, height },
             });
