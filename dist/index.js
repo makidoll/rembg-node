@@ -117,7 +117,7 @@ class Rembg {
             }
             // https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_simple.py#L15
             // https://github.com/danielgatis/rembg/blob/9839adca961369e18f52e655d8a475acf07e7741/rembg/session_base.py#L14
-            const imageSize = 320;
+            const imageSize = 100;
             const { width, height } = yield sharpInput.metadata();
             // 0 to 255
             let inputPixels = yield sharpInput
