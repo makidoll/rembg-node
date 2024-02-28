@@ -1,5 +1,9 @@
 # Rembg Node
 
+> ⚠️ This project is unmaintained. I wouldn't recommend using it either.<br>Some of the algorithms are missing and results are often not great.<br>I instead recommend you check out my other package:<br>https://github.com/makidoll/transparent-background-npm
+
+---
+
 [![](https://img.shields.io/npm/v/rembg-node)](https://www.npmjs.com/package/rembg-node)
 
 Rembg lets you **easily remove backgrounds** from images using the [U2-Net AI model](https://github.com/xuebinqin/U-2-Net)
